@@ -6,4 +6,5 @@ import (
 
 func main() {
 	fmt.Println("Go Data Server")
+	fmt.Println("-----------------")
 }
