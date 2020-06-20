@@ -7,15 +7,17 @@ import (
 )
 
 func main() {
-    port := os.Getenv("PORT")
-    if port == "" {
-        port = ":8080"
-    } else {
-        port = ":" + port
-    }
-
     http.HandleFunc("/", TitlePage)
-    http.ListenAndServe(port, nil)
+    http.ListenAndServe(GetPort(":8080"), nil)
+}
+
+func GetPort(default string) string {
+    port := os.Getenv("PORT")
+    if port != "" {
+        return ":" + port
+    } else {
+        return default
+    }
 }
 
 func TitlePage(w http.ResponseWriter, r *http.Request) {
