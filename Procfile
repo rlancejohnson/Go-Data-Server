@@ -1,1 +1,1 @@
-web: go run src/server/server.go
+web: bin/server
