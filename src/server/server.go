@@ -13,7 +13,7 @@ func main() {
     }
 
     http.HandleFunc("/", TitlePage)
-    http.ListenAndServeTLS(port, "", "", nil)
+    http.ListenAndServe(port, nil)
 }
 
 func TitlePage(w http.ResponseWriter, r *http.Request) {
