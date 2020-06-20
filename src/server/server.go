@@ -21,5 +21,7 @@ func GetPort(defaultPort string) string {
 }
 
 func TitlePage(w http.ResponseWriter, r *http.Request) {
-    fmt.Fprintf(w, "Go Data Server!")
+    fmt.Fprintf(w, "Go Data Server!\n")
+    fmt.Fprintf(w, "----------------\n")
+    fmt.Fprintf(w, r.URL.Path[1:])
 }
