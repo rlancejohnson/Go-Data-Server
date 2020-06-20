@@ -1,3 +1,3 @@
-go1.14
-
 module server
+
+go 1.14
