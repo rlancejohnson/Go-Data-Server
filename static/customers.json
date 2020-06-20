@@ -1,0 +1,19 @@
+{
+    "customers": [
+        {
+            "firstName": "Lance",
+            "lastName": "Johnson",
+            "email": "rlancejohnson@gmail.com"
+        },
+        {
+            "firstName": "Fred",
+            "lastName": "Smith",
+            "email": "fred.smith@gmail.com"
+        },
+        {
+            "firstName": "jack",
+            "lastName": "man",
+            "email": "jack.man@gmail.com"
+        }
+    ]
+}
