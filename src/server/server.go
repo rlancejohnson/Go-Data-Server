@@ -11,12 +11,12 @@ func main() {
     http.ListenAndServe(GetPort(":8080"), nil)
 }
 
-func GetPort(default string) string {
+func GetPort(defaultPort string) string {
     port := os.Getenv("PORT")
     if port != "" {
         return ":" + port
     } else {
-        return default
+        return defaultPort
     }
 }
 
